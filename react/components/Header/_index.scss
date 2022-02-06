@@ -1,0 +1,37 @@
+@use "../../styles/abstracts" as *;
+
+.header {
+	height: var(--header-height);
+	background-color: $dark-blue-1;
+	color: $white-1;
+	display: flex;
+	align-items: center;
+
+	&__content {
+		width: var(--content-width);
+		margin: auto;
+		display: flex;
+		align-items: center;
+	}
+
+	&__heading {
+		margin: 0;
+	}
+
+	&__nav {
+		margin-left: 10rem;
+	}
+
+	&__list {
+		display: flex;
+	}
+
+	&__item {
+		margin-left: 2rem;
+	}
+
+	&__link:hover {
+		color: $grey-1;
+		text-decoration: underline;
+	}
+}

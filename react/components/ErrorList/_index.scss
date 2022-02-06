@@ -1,0 +1,12 @@
+@use "../../styles/abstracts" as *;
+
+.error-list {
+	margin-top: 2rem;
+	padding-left: 1.5rem;
+	list-style: disc;
+
+	&__error {
+		color: $red-1;
+		font-weight: bold;
+	}
+}

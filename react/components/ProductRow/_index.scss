@@ -1,0 +1,15 @@
+@use "../../styles/abstracts" as *;
+
+.product-row {
+	&__button {
+		color: $dark-blue-1;
+		background: none;
+		border: none;
+		&:active {
+			transform: scale(.97);
+		}
+		&:hover {
+			color: $grey-2;
+		}
+	}	
+}

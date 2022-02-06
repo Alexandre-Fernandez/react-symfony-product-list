@@ -1,0 +1,55 @@
+@use "../abstracts" as *;
+
+:root {
+	--header-height: 7rem;
+	--content-width: 175rem;
+}
+
+body {
+	color: $dark-blue-1;
+}
+
+main {
+	width: var(--content-width);
+	margin: auto;
+}
+
+.auth {
+	height: calc(100vh - var(--header-height));
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+	padding-top: 15rem;
+}
+
+.form-container {
+	width: min-content;
+	text-align: center;
+	border: 5px solid $dark-blue-1;
+	padding: 4rem 5rem;
+}
+
+.form {
+	--form-width: 35rem;
+	--section-margin: 2.5rem;
+	text-align: left;
+	width: var(--form-width);
+	margin: auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+
+	&__label {
+		margin-top: var(--section-margin);
+	}
+
+	&__submit {
+		margin: var(--section-margin) auto;
+		width: min-content;
+		padding: 1rem 2rem;
+		border: none;
+		background: $dark-blue-1;
+		color: $white-1;
+		font-weight: bold;
+	}
+}

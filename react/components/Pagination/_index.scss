@@ -1,0 +1,17 @@
+@use "../../styles/abstracts" as *;
+
+.pagination {
+	margin: 2rem 0 5rem;
+	text-align: center;
+	width: 30rem;
+	font-size: 3rem;
+	display: flex;
+	justify-content: center;
+	column-gap: 2rem;
+
+	&__button {
+		background: none;
+		border: none;
+		color: $dark-blue-1;
+	}	
+}
